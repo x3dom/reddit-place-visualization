@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timelapsed 3D visualization of Reddit's Place</title>
+        <link rel="stylesheet" type="text/css" href="x3dom.css">
+        <script type="text/javascript" src="x3dom.js"></script>
+        <style>
+            html, body, x3d { width: 100%; height: 100%; margin: 0 padding: 0; overflow: hidden; border: none; font-family: Arial, "sans serif"}
+            body { background: radial-gradient(ellipse at center, #d2d2d2 0%,#222 100%); }
+            .header { position: absolute; width: 600px; height: 150px; background: url(data/header.png); top: 50px; left: 0; z-index: 5; }
+        </style>
+        
+    </head>
+    <body>
+        <x3d id="x3d">        
+            <scene id="scene">
+                <NavigationInfo type= 'turntable' typeParams= '0.0 0.0 0.2 1.4'></NavigationInfo>
+                <Viewpoint position="0.00262 1.15466 -0.80130" orientation="-0.00076 0.88604 0.46361 3.13869"></Viewpoint>
+                <Transform translation='0 0 0'>
+                    <Shape>
+                        <Appearance>
+                            <Material diffuseColor='0.1 0.1 0.1' shininess='0.1' specularColor='0.5 0.5 0.5'></Material>
+                        </Appearance>
+                        <IndexedFaceSet DEF='Box001-2-FACES' normalIndex='4 4 4 -1 4 4 4 -1 2 2 2 -1 2 2 2 -1 3 3 3 -1 3 3 3 -1 0 0 0 -1 0 0 0 -1 5 5 5 -1 5 5 5 -1 1 1 1 -1 1 1 1 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 3 3 3 -1 3 3 3 -1 3 3 3 -1 3 3 3 -1 5 5 5 -1 5 5 5 -1 5 5 5 -1 5 5 5 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 0 0 0 -1 1 1 1 -1 1 1 1 -1 1 1 1 -1 1 1 1 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 4 4 4 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 2 2 2 -1 1 1 1 -1 1 1 1 -1 3 3 3 -1 3 3 3 -1 0 0 0 -1 0 0 0 -1 5 5 5 -1 5 5 5 -1' coordIndex='25 26 27 -1 27 24 25 -1 33 34 35 -1 35 32 33 -1 10 13 12 -1 12 11 10 -1 18 21 20 -1 20 19 18 -1 8 15 14 -1 14 9 8 -1 16 23 22 -1 22 17 16 -1 19 25 24 -1 24 18 19 -1 17 27 26 -1 26 16 17 -1 21 29 28 -1 28 20 21 -1 23 31 30 -1 30 22 23 -1 1 5 13 -1 13 10 1 -1 4 0 11 -1 11 12 4 -1 2 6 15 -1 15 8 2 -1 7 3 9 -1 9 14 7 -1 10 11 26 -1 26 25 10 -1 8 9 24 -1 24 27 8 -1 14 15 30 -1 30 29 14 -1 12 13 28 -1 28 31 12 -1 3 7 21 -1 21 18 3 -1 5 1 19 -1 19 20 5 -1 0 4 23 -1 23 16 0 -1 6 2 17 -1 17 22 6 -1 1 10 25 -1 25 19 1 -1 9 3 18 -1 18 24 9 -1 2 8 27 -1 27 17 2 -1 11 0 16 -1 16 26 11 -1 7 14 29 -1 29 21 7 -1 13 5 20 -1 20 28 13 -1 4 12 31 -1 31 23 4 -1 15 6 22 -1 22 30 15 -1 28 29 33 -1 33 32 28 -1 29 30 34 -1 34 33 29 -1 30 31 35 -1 35 34 30 -1 31 28 32 -1 32 35 31 -1'>
+                            <Coordinate DEF='Box001-2-COORD' point='-0.5 0 0.5 0.5 0 0.5 -0.5 0 -0.5 0.5 0 -0.5 -0.5 0.15 0.5 0.5 0.15 0.5 -0.5 0.15 -0.5 0.5 0.15 -0.5 -0.4794 0 -0.5 0.4794 0 -0.5 0.4794 0 0.5 -0.4794 0 0.5 -0.4794 0.15 0.5 0.4794 0.15 0.5 0.4794 0.15 -0.5 -0.4794 0.15 -0.5 -0.5 0 0.4794 -0.5 0 -0.4794 0.5 0 -0.4794 0.5 0 0.4794 0.5 0.15 0.4794 0.5 0.15 -0.4794 -0.5 0.15 -0.4794 -0.5 0.15 0.4794 0.4794 0 -0.4794 0.4794 0 0.4794 -0.4794 0 0.4794 -0.4794 0 -0.4794 0.4794 0.15 0.4794 0.4794 0.15 -0.4794 -0.4794 0.15 -0.4794 -0.4794 0.15 0.4794 0.4794 0.03 0.4794 0.4794 0.03 -0.4794 -0.4794 0.03 -0.4794 -0.4794 0.03 0.4794'></Coordinate>
+                            <Normal vector='1 0 0 -1 0 0 0 1 0 0 0 1 0 -1 0 0 0 -1'></Normal>
+                        </IndexedFaceSet>
+                    </Shape>
+                </Transform>
+                <transform translation="0 0.14 0" rotation='1 0 0 -1.57'>
+                    <shape>
+                        <appearance>
+                            <MultiTexture>
+                                <MovieTexture repeatS="false" repeatT="false" loop="true" url="data/reddit-place-color.mp4"></MovieTexture>
+                                <MovieTexture repeatS="false" repeatT="false" loop="true" url="data/reddit-place-headmap.mp4"></MovieTexture>
+                            </MultiTexture>
+                            <composedshader>
+                                <field name='diffuseMap' type='SFInt32' value='0'></field>
+                                <field name='heatMap' type='SFInt32' value='1'></field>
+                                <shaderpart type='VERTEX'>
+                                    attribute vec3 position;
+                                    attribute vec2 texcoord;
+
+                                    uniform mat4 modelViewProjectionMatrix;
+                                    uniform mat4 normalMatrix;
+                                    uniform sampler2D heatMap;
+                                    varying vec2 fragTexCoord;
+                                    varying vec3 fragNormal;
+
+                                    void main()
+                                    {
+                                        fragTexCoord = texcoord;
+                                    
+                                        vec3 pos = position;
+                                        
+                                        vec3 heatColor = texture2D(heatMap, vec2(1.0 - fragTexCoord.x, fragTexCoord.y)).rgb;
+                                        float displacement = (heatColor.r + heatColor.g + heatColor.b) / 3.0;
+                                    
+                                        pos.z += displacement * 0.05;
+                                        
+                                        gl_Position = modelViewProjectionMatrix * vec4(pos, 1.0);
+                                    }
+                                </shaderpart>
+                                <shaderpart def="frag" type='FRAGMENT'>
+                                    #ifdef GL_ES
+                                    precision highp float;
+                                    #endif
+
+                                    uniform sampler2D diffuseMap;
+                                    varying vec2 fragTexCoord;
+                                    
+                                    varying float displacement;
+
+                                    void main()
+                                    {
+                                        vec3 diffuse = texture2D(diffuseMap, vec2(1.0 - fragTexCoord.x, fragTexCoord.y)).rgb;
+                                        gl_FragColor = vec4(diffuse, 1.0);
+                                    }
+                                </shaderpart>
+                            </composedshader>
+                        </appearance>
+                        <plane size="0.955 0.955" subdivision="1024 1024"></plane>
+                    </shape>
+                </transform>
+            </scene>
+        </x3d>
+        <section class="header"></section>
+    </body>
+</html>
